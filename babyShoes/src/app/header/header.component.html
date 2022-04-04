@@ -1,1 +1,25 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <span><img src="/assets/images/logo.png" height=30 width=41></span>
+  <a mat-button routerLink="/home" outerLinkActive="active"><span class="fa fa-home fa-lg"></span> Home</a>
+  <span class="flex-spacer"></span>
+  <a mat-button (click)="openContactForm()"><span class="fa fa-sign-in fa-lg"></span> Contact</a>
+</mat-toolbar>
+
+<div class="container jumbotron"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.xs="start center"
+    fxLayoutAlign.sm="start center"
+    fxLayoutAlign.gt-sm="center center"
+    fxLayoutGap="10px">
+
+  <div fxFlex fxFlex.gt-sm="50%">
+    <h1>Baby Shoes</h1>
+    <p>The one stop shop for all your baby shoe needs.</p>
+  </div>
+  <div fxFlex fxFlex.gt-sm="20%">
+    <img src="/assets/images/logo.png" alt="Logo">
+  </div>
+  <div fxFlex></div>
+</div>
